@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Brokey" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/brokey_saffron</item>
+        <item name="colorSecondary">@color/brokey_emerald</item>
+        <item name="android:statusBarColor">@color/charcoal_background</item>
+        <item name="android:navigationBarColor">@color/charcoal_background</item>
+    </style>
+
+    <style name="Theme.Brokey.NoActionBar" parent="Theme.Brokey">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

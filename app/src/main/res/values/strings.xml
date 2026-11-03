@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BROKEY</string>
+    <string name="app_tagline">One Keyboard. Every Indian Language.</string>
+    <string name="ime_service_name">BROKEY Indian Multilingual Keyboard</string>
+    <string name="settings_title">BROKEY Settings</string>
+
+    <!-- Subtypes -->
+    <string name="subtype_en">English (India)</string>
+    <string name="subtype_hi">Hindi (हिंदी)</string>
+    <string name="subtype_bn">Bengali (বাংলা)</string>
+    <string name="subtype_as">Assamese (অসমীয়া)</string>
+    <string name="subtype_mr">Marathi (मराठी)</string>
+    <string name="subtype_gu">Gujarati (ગુજરાતી)</string>
+    <string name="subtype_pa">Punjabi (ਪੰਜਾਬੀ)</string>
+    <string name="subtype_ta">Tamil (தமிழ்)</string>
+    <string name="subtype_te">Telugu (తెలుగు)</string>
+    <string name="subtype_kn">Kannada (ಕನ್ನಡ)</string>
+    <string name="subtype_ml">Malayalam (മലയാളം)</string>
+    <string name="subtype_or">Odia (ଓଡ଼ିଆ)</string>
+    <string name="subtype_ur">Urdu (اردو)</string>
+    <string name="subtype_sa">Sanskrit (संस्कृतम्)</string>
+    <string name="subtype_ne">Nepali (नेपाली)</string>
+    <string name="subtype_kok">Konkani (कोंकणी)</string>
+    <string name="subtype_ks">Kashmiri (कॉशुर)</string>
+    <string name="subtype_sd">Sindhi (سنڌي / सिन्धी)</string>
+    <string name="subtype_mni">Manipuri (মৈতৈলোন্ / ꯃꯤꯇꯩꯂꯣꯟ)</string>
+    <string name="subtype_brx">Bodo (बड़ो)</string>
+    <string name="subtype_doi">Dogri (डोगरी)</string>
+    <string name="subtype_mai">Maithili (मैथिली)</string>
+    <string name="subtype_sat">Santali (ᱥᱟᱱᱛᱟᱲᱤ)</string>
+
+    <!-- Onboarding -->
+    <string name="welcome_title">Welcome to BROKEY</string>
+    <string name="welcome_subtitle">Fast, private, native typing across 22 Indian languages and English.</string>
+    <string name="step_1_enable">1. Enable in System Settings</string>
+    <string name="step_2_select">2. Switch Input Method</string>
+    <string name="step_3_ready">3. Start Typing Anywhere</string>
+    <string name="privacy_pledge">Zero telemetry. Offline by design. Keystrokes never leave your phone.</string>
+    <string name="status_active">BROKEY is active and ready to type!</string>
+    <string name="status_enabled_not_selected">BROKEY is enabled in system settings, but not selected as active input method.</string>
+    <string name="status_not_enabled">BROKEY is not yet enabled. Complete Step 1 to begin.</string>
+</resources>

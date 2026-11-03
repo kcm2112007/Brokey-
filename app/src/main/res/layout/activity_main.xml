@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#16181C"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Header & Brand -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/app_name"
+        android:textColor="#FF9933"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/app_tagline"
+        android:textColor="#94A3B8"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#20242A"
+        android:padding="16dp"
+        android:text="Checking keyboard status..."
+        android:textColor="#F8FAFC"
+        android:textSize="14sp" />
+
+    <!-- Setup Steps -->
+    <Button
+        android:id="@+id/btn_enable_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF9933"
+        android:text="Step 1: Enable BROKEY in Settings"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btn_select_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#2B3038"
+        android:text="Step 2: Choose BROKEY Input Method"
+        android:textColor="#F8FAFC" />
+
+    <Button
+        android:id="@+id/btn_open_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#2B3038"
+        android:text="Keyboard Preferences &amp; Languages"
+        android:textColor="#F8FAFC" />
+
+    <!-- Test Input Area -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Try typing below:"
+        android:textColor="#94A3B8"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/et_test_typing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#20242A"
+        android:hint="Tap here to test BROKEY keyboard..."
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:padding="16dp"
+        android:textColor="#F8FAFC"
+        android:textColorHint="#64748B" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/privacy_pledge"
+        android:textColor="#64748B"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="com.brokey.settings.KeyboardSettingsActivity">
+
+    <!-- English (Default) -->
+    <subtype
+        android:imeSubtypeLocale="en_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_en"
+        android:isAsciiCapable="true" />
+
+    <!-- 22 Scheduled Indian Languages -->
+    <subtype
+        android:imeSubtypeLocale="hi_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_hi" />
+
+    <subtype
+        android:imeSubtypeLocale="bn_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_bn" />
+
+    <subtype
+        android:imeSubtypeLocale="as_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_as" />
+
+    <subtype
+        android:imeSubtypeLocale="mr_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_mr" />
+
+    <subtype
+        android:imeSubtypeLocale="gu_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_gu" />
+
+    <subtype
+        android:imeSubtypeLocale="pa_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_pa" />
+
+    <subtype
+        android:imeSubtypeLocale="ta_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_ta" />
+
+    <subtype
+        android:imeSubtypeLocale="te_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_te" />
+
+    <subtype
+        android:imeSubtypeLocale="kn_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_kn" />
+
+    <subtype
+        android:imeSubtypeLocale="ml_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_ml" />
+
+    <subtype
+        android:imeSubtypeLocale="or_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_or" />
+
+    <subtype
+        android:imeSubtypeLocale="ur_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_ur" />
+
+    <subtype
+        android:imeSubtypeLocale="sa_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_sa" />
+
+    <subtype
+        android:imeSubtypeLocale="ne_NP"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_ne" />
+
+    <subtype
+        android:imeSubtypeLocale="kok_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_kok" />
+
+    <subtype
+        android:imeSubtypeLocale="ks_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_ks" />
+
+    <subtype
+        android:imeSubtypeLocale="sd_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_sd" />
+
+    <subtype
+        android:imeSubtypeLocale="mni_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_mni" />
+
+    <subtype
+        android:imeSubtypeLocale="brx_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_brx" />
+
+    <subtype
+        android:imeSubtypeLocale="doi_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_doi" />
+
+    <subtype
+        android:imeSubtypeLocale="mai_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_mai" />
+
+    <subtype
+        android:imeSubtypeLocale="sat_IN"
+        android:imeSubtypeMode="keyboard"
+        android:label="@string/subtype_sat" />
+
+</input-method>

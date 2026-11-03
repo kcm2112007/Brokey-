@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:translateX="10.8"
+        android:translateY="10.8">
+        <!-- Keyboard base frame -->
+        <path
+            android:fillColor="#242831"
+            android:strokeColor="#FF9933"
+            android:strokeWidth="2.5"
+            android:pathData="M20,24 h68 a8,8 0 0,1 8,8 v44 a8,8 0 0,1 -8,8 h-68 a8,8 0 0,1 -8,-8 v-44 a8,8 0 0,1 8,-8 z" />
+        <!-- Top key row dots -->
+        <path
+            android:fillColor="#FF9933"
+            android:pathData="M28,34 h8 v6 h-8 z M42,34 h8 v6 h-8 z M56,34 h8 v6 h-8 z M70,34 h8 v6 h-8 z" />
+        <!-- Middle key row dots -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M32,46 h8 v6 h-8 z M46,46 h8 v6 h-8 z M60,46 h8 v6 h-8 z M74,46 h8 v6 h-8 z" />
+        <!-- Spacebar with emerald Indic accent -->
+        <path
+            android:fillColor="#138808"
+            android:pathData="M36,58 h36 v6 h-36 z" />
+    </group>
+</vector>
