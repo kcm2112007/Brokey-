@@ -2,9 +2,9 @@ name: Build Android APK
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
   pull_request:
-    branches: [ main, master ]
+    branches: [main, master]
   workflow_dispatch:
 
 jobs:
@@ -20,44 +20,34 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '17'
-          distribution: 'temurin'
+          distribution: temurin
           cache: gradle
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: |
+            platform-tools
+            platforms;android-34
+            build-tools;34.0.0
 
-      - name: Grant Execute Permission for Gradlew
-        run: |
-          if [ -f "gradlew" ]; then
-            chmod +x gradlew
-          elif [ -f "android/gradlew" ]; then
-            chmod +x android/gradlew
-          fi
+      - name: Grant Execute Permission for Gradle
+        run: chmod +x gradlew
 
       - name: Build Debug APK
-        run: |
-          if [ -f "gradlew" ]; then
-            ./gradlew assembleDebug --stacktrace
-          else
-            cd android && ./gradlew assembleDebug --stacktrace
-          fi
+        run: ./gradlew assembleDebug --stacktrace
 
       - name: Build Release APK
-        run: |
-          if [ -f "gradlew" ]; then
-            ./gradlew assembleRelease --stacktrace
-          else
-            cd android && ./gradlew assembleRelease --stacktrace
-          fi
+        run: ./gradlew assembleRelease --stacktrace
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
         with:
           name: brokey-debug-apk
-          path: '**/build/outputs/apk/debug/*.apk'
+          path: app/build/outputs/apk/debug/*.apk
 
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
         with:
           name: brokey-release-apk
-          path: '**/build/outputs/apk/release/*.apk'
+          path: app/build/outputs/apk/release/*.apk
