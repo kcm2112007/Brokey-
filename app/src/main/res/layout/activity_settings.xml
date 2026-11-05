@@ -2,72 +2,256 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#16181C">
+    android:background="#181A1F"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:paddingStart="20dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="36dp">
 
+        <!-- Top Header Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_back"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="#22262E"
+                android:gravity="center"
+                android:text="←"
+                android:textColor="#F8FAFC"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:text="@string/settings_title"
+                android:textColor="#F8FAFC"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Typing & Ergonomics Card -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/settings_title"
-            android:textColor="#F8FAFC"
-            android:textSize="22sp"
+            android:layout_marginTop="24dp"
+            android:text="Typing &amp; Feedback"
+            android:textColor="#F97316"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#22262E"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Switch
+                android:id="@+id/switch_haptic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Haptic vibration feedback"
+                android:textColor="#F8FAFC"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#2E343E" />
+
+            <Switch
+                android:id="@+id/switch_sound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keypress click audio"
+                android:textColor="#F8FAFC"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#2E343E" />
+
+            <Switch
+                android:id="@+id/switch_auto_caps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Auto-capitalization after punctuation"
+                android:textColor="#F8FAFC"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#2E343E" />
+
+            <Switch
+                android:id="@+id/switch_number_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dedicated number row (123)"
+                android:textColor="#F8FAFC"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Backspace Hold-to-Delete Info Card -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Preferences"
-            android:textColor="#FF9933"
-            android:textSize="14sp"
+            android:layout_marginTop="22dp"
+            android:text="Backspace Continuous Deletion"
+            android:textColor="#F97316"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
-        <Switch
-            android:id="@+id/switch_haptic"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Vibration / Haptic feedback on keypress"
-            android:textColor="#F8FAFC" />
+            android:layout_marginTop="10dp"
+            android:background="#22262E"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <Switch
-            android:id="@+id/switch_sound"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Keypress click sound"
-            android:textColor="#F8FAFC" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continuous hold-to-delete is active"
+                android:textColor="#F8FAFC"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
-        <Switch
-            android:id="@+id/switch_auto_caps"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Auto-capitalization after period"
-            android:textColor="#F8FAFC" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="• Tap once: Deletes 1 character instantly (&lt; 5ms)\n• Hold down: Repeats deletion every 65ms after 400ms\n• Sustained hold: Accelerates and deletes whole words cleanly\n• Releasing finger immediately stops deletion"
+                android:textColor="#94A3B8"
+                android:textSize="12sp" />
+        </LinearLayout>
 
+        <!-- Theme Selection Card -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:text="Privacy &amp; Data"
-            android:textColor="#FF9933"
-            android:textSize="14sp"
+            android:layout_marginTop="22dp"
+            android:text="Visual Appearance"
+            android:textColor="#F97316"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btn_clear_clipboard"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:backgroundTint="#2B3038"
-            android:text="Clear Clipboard &amp; Local Typing Cache"
-            android:textColor="#F8FAFC" />
+            android:layout_marginTop="10dp"
+            android:background="#22262E"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_current_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active: Charcoal Dark (Orange Accent)"
+                android:textColor="#F8FAFC"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_theme_charcoal"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#F97316"
+                    android:text="Charcoal Dark"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_theme_light"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2B3038"
+                    android:text="Light Theme"
+                    android:textColor="#F8FAFC"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Privacy & Local Data -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Privacy &amp; Security"
+            android:textColor="#F97316"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#22262E"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zero Telemetry Guarantee"
+                android:textColor="#34D399"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="BROKEY runs strictly offline. No network permissions requested in AndroidManifest. Keystrokes, passwords, and clipboard items never leave your device."
+                android:textColor="#94A3B8"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btn_clear_clipboard"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#2B3038"
+                android:text="Clear Transient Clipboard &amp; Cache"
+                android:textColor="#F8FAFC"
+                android:textSize="12sp" />
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

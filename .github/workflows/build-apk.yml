@@ -1,15 +1,13 @@
-name: Build Android APK
+name: Build BROKEY Android APK
 
 on:
   push:
-    branches: [main, master]
-  pull_request:
     branches: [main, master]
   workflow_dispatch:
 
 jobs:
   build:
-    name: Build BROKEY Debug and Release APKs
+    name: Build BROKEY APKs
     runs-on: ubuntu-latest
 
     steps:
@@ -20,20 +18,23 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '17'
-          distribution: 'temurin'
+          distribution: temurin
           cache: gradle
 
       - name: Setup Android SDK
-        uses: android-actions/setup-android@v4
+        uses: android-actions/setup-android@v3
 
-      - name: Grant Execute Permission for Gradle
+      - name: Install Android SDK 34
+        run: sdkmanager "platforms;android-34" "build-tools;34.0.0"
+
+      - name: Grant Gradle Permission
         run: chmod +x gradlew
 
       - name: Build Debug APK
-        run: ./gradlew --no-daemon assembleDebug --stacktrace
+        run: ./gradlew assembleDebug --stacktrace
 
       - name: Build Release APK
-        run: ./gradlew --no-daemon assembleRelease --stacktrace
+        run: ./gradlew assembleRelease --stacktrace
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Brand & Accent -->
-    <color name="brokey_saffron">#FF9933</color>
-    <color name="brokey_saffron_dark">#D97706</color>
-    <color name="brokey_emerald">#138808</color>
-    <color name="brokey_ashoka_blue">#000080</color>
+    <!-- Brand & Accent (Tasteful Warm Orange) -->
+    <color name="brokey_saffron">#F97316</color>
+    <color name="brokey_saffron_dark">#EA580C</color>
+    <color name="brokey_emerald">#10B981</color>
+    <color name="brokey_ashoka_blue">#0284C7</color>
 
     <!-- Dark Charcoal Theme (Default) -->
-    <color name="charcoal_background">#16181C</color>
-    <color name="charcoal_surface">#20242A</color>
-    <color name="charcoal_key_normal">#2B3038</color>
-    <color name="charcoal_key_action">#373E48</color>
-    <color name="charcoal_key_pressed">#444C59</color>
-    <color name="charcoal_text_primary">#F8FAFC</color>
+    <color name="charcoal_background">#181A1F</color>
+    <color name="charcoal_surface">#22262E</color>
+    <color name="charcoal_key_normal">#252930</color>
+    <color name="charcoal_key_action">#1E2127</color>
+    <color name="charcoal_key_pressed">#383E49</color>
+    <color name="charcoal_text_primary">#F1F5F9</color>
     <color name="charcoal_text_secondary">#94A3B8</color>
-    <color name="charcoal_accent">#F59E0B</color>
+    <color name="charcoal_accent">#F97316</color>
 
     <!-- Light Theme -->
     <color name="light_background">#ECEFF1</color>
