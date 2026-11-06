@@ -92,7 +92,7 @@ class HapticFeedbackManager(private val context: Context) {
      */
     fun performAudioFeedback(keyType: com.brokey.keyboard.KeyModel.KeyType) {
         val prefs = BrokeyApplication.instance.preferences
-        if (!prefs.isSoundEnabled()) return
+        if (Settings.System.getInt(context.contentResolver, Settings.System.SOUND_EFFECTS_ENABLED, 1) == 0) return
         val am = audioManager ?: return
 
         val fx = when (keyType) {
